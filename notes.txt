@@ -1,0 +1,152 @@
+//basic setup
+
+1.initialize npm
+2.instal npm packages required
+3.create and connect database
+4.app.js (boilerplate)
+
+//listing model
+5.initialize mongodb first
+6.create schema of listing in listing.js 
+7.create a sample data in app.js named testlisting to save sample data in database
+8.test the saved database
+
+//initialize batabase
+9.create a folder init in which data.js stores the data to be used whereas index.js file initializes the data and stores in database
+
+//index route
+10.create a /listings path for index.js i.e home page 
+
+//READ:show route
+11.view the listing based on touched id in detail
+
+//CREATE ROUTE(new and create route)
+12.crete button in index.ejs for creting new listing and adding it to db an redirecrt to .listings
+
+
+//Update:(edit and update)
+13.make an edit route to show current data after sumbit in edit update the data by using id
+
+//Delete
+14.delete the listing by id using delete button and method-override.
+
+//frontend and styling
+
+1.creating boilerplate package-ejs-mate(helps make boilerplate for repetative code)
+connect the boiler plate properly
+2.create static folder for css files
+
+
+//creating Navbar
+1.apply cdn for icons and connection with bootstrap (required connections)
+2.using bootstrap all linking tags
+3.take navbar template
+4.add footer to the page
+
+//styling index
+//stling new page
+//styling edit listing
+//styling show listing
+
+//phase 1- part c
+//Error handling - 1.client side
+                   2.server side
+//make standardisation using bootstrap
+step:1.novalidate:blocks browser functions
+2.add class needs validation in form
+3.use new div in paticular element to add message 
+valid-feedback
+invalid feedback
+
+//custom error handling - wrapAsync
+//express error - ExpressError
+//error.ejs - page to display message of error
+//schema validation - 
+
+//error encounered - .listing nahi tha title ka error araha tha
+
+//validation for schema
+1.if statement
+2.use joi (easy) - for server side validation
+implement joi validation schema in middleware
+
+
+//phase 2 - part a
+// New Model - Reviews  make review section for each post
+
+step1:Setting up review form
+Step2:Submitting the form setting route and save review to database
+
+validation of Reviews
+1.client side
+2.server side(joi)
+
+//render reviews in show page 
+in get route use populate function to get the whole object
+and then extract them using for of loop 
+
+//Adding styling
+make reviews in card format
+
+//delete review
+use ${pull} operator in mongodb
+
+//Deleting listing - when we delete a listing reviews of that listing must also delete
+//delete middleware
+
+//Restructuring the code
+Express Router - 
+1.restructuring listing - 
+2.restucturing reviews - 
+
+//Express Sessions
+//implementing sessions in project
+initialize cookie
+adding cookie options - expires,maxage ,http only
+implement flash message on listing , review on insert and delete operations
+in app.js flash will come first then routes 
+define success and failure partial for message 
+
+
+//authentication an authorization
+1. create user model
+usename,passsword,email
+2.require necessary modules
+3.make a demo user
+4.sign up user route( GET and POST route )
+5.Login page route 
+
+//phase 2 - part e (authentication and authorization)
+1.connecting login route
+2.Logout user - req.Logout
+3.Add styling
+4.login after sign up
+5.post login page
+6.Listing owner
+7.authorization for listing - somebody else cannot change the listing only the owner
+8.authorization for reviews - make review with author & who can only access his review
+
+//phase 3 - part a
+1.Add MVC - model,view,controller
+2.implement MVC for reviews and user
+3.implementing Routing.route
+4.Restyling rating in star format
+5.Upload Image
+mnaipulate from parse Image
+cloudinary - connect credentials 
+use multer
+use cloudinary multer storage cloudinary
+save link in mongodb database
+Display Image
+Edit Listing Image
+Image Preview For edit page
+
+
+//Phase 3 - Part 3 
+1.Maps
+2.Geocoding
+3.Storing cooridanates - GEOJson format for storing geographical data
+4.Showing on map coordinate(map maker (showing custom location))
+6.map popup
+
+7.Fixing And Adding Additional features to HomePage
